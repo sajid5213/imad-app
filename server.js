@@ -21,6 +21,12 @@ app.get('/article-TEO', function (req, res) {
 
 });
 
+var counter = 0;
+app.get('/counter', function (req, res) {
+    counter = counter + 1;
+   res.send(counter.toString())});
+
+
 app.get('/article-3', function (req, res) {
   res.send('article3 will be served here');
 });
